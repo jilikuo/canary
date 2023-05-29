@@ -2399,6 +2399,9 @@ void Game::internalQuickLootCorpse(Player* player, Container* corpse) {
 		ss << "No loot";
 	}
 
+	if (player->checkAutoLoot()) {
+		ss << " (automatic looting)";
+	}
 	ss << ".";
 	player->sendTextMessage(MESSAGE_LOOT, ss.str());
 

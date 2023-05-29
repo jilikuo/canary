@@ -328,6 +328,15 @@ bool ConfigManager::load() {
 	integer[HAZARD_PODS_DAMAGE] = getGlobalNumber(L, "hazardPodsDamage", 5);
 	integer[HAZARD_SPAWN_PLUNDER_MULTIPLIER] = getGlobalNumber(L, "hazardSpawnPlunderMultiplier", 25);
 
+	// Vip System
+	boolean[VIP_SYSTEM_ENABLED] = getGlobalBoolean(L, "vipSystemEnabled", false);
+	integer[VIP_SYSTEM_EXP_PERCENT] = getGlobalNumber(L, "vipSystemExpPercent", 0);
+	integer[VIP_SYSTEM_LOOT_PERCENT] = getGlobalNumber(L, "vipSystemLootPercent", 0);
+	boolean[VIP_SYSTEM_GAIN_COINS_ENABLED] = getGlobalBoolean(L, "vipSystemGainCoinsEnabled", false);
+	boolean[VIP_SYSTEM_GAIN_TOKENS_ENABLED] = getGlobalBoolean(L, "vipSystemGainTokensEnabled", false);
+	boolean[VIP_SYSTEM_AUTO_LOOT_ONLY_VIP] = getGlobalBoolean(L, "vipSystemAutoLootOnlyVip", false);
+	integer[VIP_SYSTEM_FAMILIAR_TIME_DEBIT] = getGlobalNumber(L, "vipSystemFamiliarTimeDebit", 0);
+	boolean[VIP_SYSTEM_CAN_KICK_IDLE_PLAYER] = getGlobalBoolean(L, "vipSystemCanKickIdlePlayer", false);
 	boolean[TOGGLE_WHEELSYSTEM] = getGlobalBoolean(L, "wheelSystemEnabled", true);
 	integer[WHEEL_POINTS_PER_LEVEL] = getGlobalNumber(L, "wheelPointsPerLevel", 1);
 

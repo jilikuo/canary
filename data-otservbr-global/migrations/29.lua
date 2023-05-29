@@ -1,5 +1,12 @@
 function onUpdateDatabase()
-	Spdlog.info("Updating database to version 30 (wheel of destiny)")
+	Spdlog.info("Updating database to version 30 (create vip system columns)")
+	db.query(
+		[[
+			ALTER TABLE `accounts`
+				ADD COLUMN `vipdays` int(11) NOT NULL DEFAULT 0 AFTER `lastday`,
+				ADD COLUMN `viplastday` int(10) NOT NULL DEFAULT 0 AFTER `vipdays`;
+		]]
+	)
 	db.query([[
 	CREATE TABLE IF NOT EXISTS `player_wheeldata` (
 		`player_id` int(11) NOT NULL,
