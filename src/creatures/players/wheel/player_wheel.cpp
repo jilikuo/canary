@@ -910,7 +910,7 @@ bool PlayerWheel::canOpenWheel() const {
 		return false;
 	}
 
-	if (m_player.getVocation()->getId() <= 4) {
+	if (m_player.getVocation()->getId() <= 4 && m_player.getStorageValue(STORAGEVALUE_PROMOTION) == -1) {
 		return false;
 	}
 
@@ -2556,7 +2556,7 @@ float PlayerWheel::calculateMitigation() const {
 	mitigation += (mitigation * (float)getMitigationMultiplier()) / 100.f;
 	return mitigation;
 }
-
+/* 
 void PlayerWheel::applyCombatHealing(CombatDamage &damage, Creature* target) const {
 	damage.primary.value += (damage.primary.value * damage.healingMultiplier) / 100;
 	damage.primary.value += getStat(WheelStat_t::HEALING);
@@ -2627,4 +2627,4 @@ int32_t PlayerWheel::applyTargetHealthChange(CombatDamage &damage, const Creatur
 	}
 
 	return targetHealth;
-}
+}*/

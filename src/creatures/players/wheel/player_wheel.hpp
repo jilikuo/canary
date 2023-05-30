@@ -301,24 +301,25 @@ class PlayerWheel {
 		 */
 		float calculateMitigation() const;
 
-		/** @details Combat helpers functions */
-		/**
+
+		/* @details Combat helpers functions 
+		
 		 * @brief Applies healing effects from the Wheel of Destiny to the combat damage.
 		 *
 		 * @param damage The combat damage to be modified.
 		 * @param target Pointer to the target creature.
-		 */
+		 
 		void applyCombatHealing(CombatDamage &damage, Creature* target) const;
 
-		/**
+		
 		 * @brief Applies Wheel of Destiny effects to the combat damage.
 		 *
 		 * @param damage The combat damage to be modified.
 		 * @param target Pointer to the target creature.
-		 */
+		 
 		void applyCombatEffectsToDamage(CombatDamage &damage, const Creature* target) const;
 
-		/**
+		
 		 * @brief Applies the health change to the target creature based on the combat damage.
 		 *
 		 * @details This function calculates the health change for the target creature based on the provided combat damage.
@@ -327,9 +328,8 @@ class PlayerWheel {
 		 * @param damage The combat damage to apply.
 		 * @param target The target creature to apply the damage to.
 		 * @return The updated target creature's health after applying the damage.
-		 */
-		int32_t applyTargetHealthChange(CombatDamage &damage, const Creature* target) const;
-
+		 
+		int32_t applyTargetHealthChange(CombatDamage &damage, const Creature* target) const; */
 	private:
 		friend class Player;
 		// Reference to the player
