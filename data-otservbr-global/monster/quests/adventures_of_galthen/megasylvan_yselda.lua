@@ -67,6 +67,7 @@ monster.summon = {
 }
 
 monster.loot = {
+	{name = "crystal coin", chance = 10000, maxCount = 3},
 	{id = 3035, chance = 100000, minCount = 1, maxCount = 9}, -- platinum coin
 	{id = 8010, chance = 100000, minCount = 1, maxCount = 5}, -- potato
 	{id = 23375, chance = 57140, minCount = 1, maxCount = 33}, -- supreme health potion
@@ -100,7 +101,7 @@ monster.attacks = {
 	{name ="combat", interval = 2000, chance = 50, type = COMBAT_DEATHDAMAGE, minDamage = -400, maxDamage = -800, range = 5, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = false},
 	{name ="combat", interval = 2000, chance = 50, type = COMBAT_PHYSICALDAMAGE, minDamage = -400, maxDamage = -800, radius = 5, effect = CONST_ME_GROUNDSHAKER, target = false},
 	{name ="mana leechMY", interval = 2000, chance = 50, minDamage = -100, maxDamage = -400, target = false}
-	}
+}
 
 monster.defenses = {
 	defense = 60,

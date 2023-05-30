@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("The Primal Menace")
 local monster = {}
 
 monster.description = "The Primal Menace"
-monster.experience = 80000
+monster.experience = 100000000
 monster.outfit = {
 	lookType = 1566,
 	lookHead = 0,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 5000000
-monster.maxHealth = 5000000
+monster.health = 8000000
+monster.maxHealth = 8000000
 monster.race = "blood"
 monster.corpse = 39530
 monster.speed = 180
@@ -49,8 +49,12 @@ monster.light = {
 	color = 0
 }
 
-monster.summon = {
-
+monster.summon = { 
+	maxSummons = 2,
+	summons = {
+		{name = "Headpecker", chance = 40, interval = 1500},
+		{name = "Sulphider", chance = 40, interval = 1500}
+	}
 }
 
 monster.voices = {
@@ -59,16 +63,16 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "primal bag", chance = 50},
+	{name = "primal bag", chance = 50}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 85, minDamage = -2500, maxDamage = -3500},
-	{name ="combat", interval = 4000, chance = 35, type = COMBAT_EARTHDAMAGE, minDamage = -3000, maxDamage = -4000, length = 10, spread = 3, effect = CONST_ME_CARNIPHILA, target = false},
-	{name ="combat", interval = 2500, chance = 45, type = COMBAT_FIREDAMAGE, minDamage = -3000, maxDamage = -7000, length = 10, spread = 3, effect = CONST_ME_HITBYFIRE, target = false},
-    {name ="big death wave", interval = 3500, chance = 35, minDamage = -4000, maxDamage = -7000, target = false},
-	{name ="combat", interval = 5000, chance = 40, type = COMBAT_ENERGYDAMAGE, effect = CONST_ME_ENERGYHIT, minDamage = -3500, maxDamage = -4000, range = 4, target = false},
-	{name ="combat", interval = 2700, chance = 45, type = COMBAT_EARTHDAMAGE, shootEffect = CONST_ANI_POISON, effect = CONST_ANI_EARTH, minDamage = -1500, maxDamage = -4000, range = 4, target = false},
+	{name ="melee", interval = 1000, chance = 85, minDamage = -500, maxDamage = -35500},
+	{name ="combat", interval = 3200, chance = 35, type = COMBAT_EARTHDAMAGE, minDamage = -2000, maxDamage = -9000, length = 10, spread = 3, effect = CONST_ME_CARNIPHILA, target = false},
+	{name ="combat", interval = 2400, chance = 45, type = COMBAT_FIREDAMAGE, minDamage = -2000, maxDamage = -9000, length = 10, spread = 3, effect = CONST_ME_HITBYFIRE, target = false},
+    {name ="big death wave", interval = 2000, chance = 35, minDamage = -3000, maxDamage = -50000, target = false},
+	{name ="combat", interval = 4000, chance = 40, type = COMBAT_ENERGYDAMAGE, effect = CONST_ME_ENERGYHIT, minDamage = -2500, maxDamage = -9000, range = 4, target = false},
+	{name ="combat", interval = 2300, chance = 45, type = COMBAT_EARTHDAMAGE, shootEffect = CONST_ANI_POISON, effect = CONST_ANI_EARTH, minDamage = -700, maxDamage = -9000, range = 4, target = false},
 
 }
 

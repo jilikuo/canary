@@ -11,7 +11,7 @@ monster.health = 1
 monster.maxHealth = 1
 monster.race = "venom"
 monster.corpse = 0
-monster.speed = 40
+monster.speed = 0
 monster.manaCost = 355
 
 monster.changeTarget = {
@@ -49,9 +49,9 @@ monster.light = {
 }
 
 monster.summon = {
-	maxSummons = 3,
+	maxSummons = 6,
 	summons = {
-		{name = "Lesser Swarmer", chance = 100, interval = 30000, count = 3}
+		{name = "Lesser Swarmer", chance = 100, interval = 7500, count = 6}
 	}
 }
 
@@ -79,7 +79,7 @@ monster.elements = {
 	{type = COMBAT_FIREDAMAGE, percent = 100},
 	{type = COMBAT_LIFEDRAIN, percent = 100},
 	{type = COMBAT_MANADRAIN, percent = 0},
-	{type = COMBAT_DROWNDAMAGE, percent = 0},
+	{type = COMBAT_DROWNDAMAGE, percent = 100},
 	{type = COMBAT_ICEDAMAGE, percent = 100},
 	{type = COMBAT_HOLYDAMAGE , percent = 100},
 	{type = COMBAT_DEATHDAMAGE , percent = 100}

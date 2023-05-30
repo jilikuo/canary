@@ -1,12 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raid>
 	<!--Announcements-->
-	<announce delay="1000" type="Event" message="Orshabaal's minions are working on his return to the World.
-		LEAVE Edron at once, mortals." />
-	<announce delay="20000" type="Event" message="Orshabaal is about to make his way into the mortal realm.
-		Run for your lives!" />
-	<announce delay="60000" type="Event" message="Orshabaal has been summoned from hell to plague the
-		lands of mortals once again." />
+	<announce delay="1000" type="Event" message="Pode-se notar elementais e demons se reunindo em Edron, algo se aproxima.
+		Tomem cuidado aventureiros." />
+	<announce delay="160000" type="Event" message="Os minions de Orshabaal trabalham para o trazer de volta a este mundo.
+		DEIXEM EDRON IMEDIATAMENTE, MORTAIS." />
+	<announce delay="380000" type="Event" message="Orshabaal em breve retorna ao mundo dos mortais.
+		Corram por suas vidas!" />
+	<announce delay="540000" type="Event" message="Orshabaal foi conjurado direto do inferno para
+		atormentar a terra dos mortais novamente." />
 	<!--Single Spawns-->
-	<singlespawn delay="60000" name="Orshabaal" x="33118" y="31699" z="7" />
+	<areaspawn delay="543000" fromx="33109" fromy="31691" fromz="7" tox="33127" toy="31706" toz="7">
+		<monster name="Orshabaal" amount="100" />
+	</areaspawn>		
+	<areaspawn delay="1000" fromx="33079" fromy="31678" fromz="7" tox="33161" toy="31720" toz="7">
+		<monster name="Fire Elemental" amount="100" />
+		<monster name="Massive Fire Elemental" amount="15" />
+		<monster name="Hellfire Fighter" amount="10" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+		<monster name="Unstable Spawn" amount ="10" />	
+	</areaspawn>
+	<areaspawn delay="50000" fromx="33082" fromy="31680" fromz="7" tox="33158" toy="31719" toz="7">
+		<monster name="Fire Elemental" amount="35" />
+		<monster name="Fire Devil" amount="35" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />		
+		<monster name="Infernal Demon" amount="1" />
+		<monster name="Unstable Spawn" amount ="5" />		
+	</areaspawn>
+	<areaspawn delay="100000" fromx="33085" fromy="3181" fromz="7" tox="33155" toy="31718" toz="7">
+		<monster name="Fire Elemental" amount="80" />
+		<monster name="Demon" amount="5" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Fire Devil" amount="15" />
+		<monster name="Unstable Spawn" amount ="5" />
+	</areaspawn>
+	<areaspawn delay="160000" fromx="33088" fromy="31682" fromz="7" tox="33152" toy="31717" toz="7">
+		<monster name="Fire Elemental" amount="15" />
+		<monster name="Demon" amount="5" />
+		<monster name="Fire Devil" amount="15" />
+		<monster name="Infernal Demon" amount="1" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Unstable Spawn" amount ="5" />
+	</areaspawn>
+	<areaspawn delay="160000" fromx="33091" fromy="31683" fromz="7" tox="33149" toy="31716" toz="7">
+		<monster name="Fire Elemental" amount="15" />
+		<monster name="Demon" amount="5" />
+		<monster name="Fire Devil" amount="15" />
+		<monster name="Infernal Demon" amount="1" />]
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Unstable Spawn" amount ="5" />
+	</areaspawn>
+	<areaspawn delay="200000" fromx="33094" fromy="31684" fromz="7" tox="33146" toy="31715" toz="7">
+		<monster name="Fire Elemental" amount="15" />
+		<monster name="Demon" amount="15" />
+		<monster name="Fire Devil" amount="15" />
+		<monster name="Infernal Demon" amount="5" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Unstable Spawn" amount ="5" />
+	</areaspawn>
+	<areaspawn delay="240000" fromx="33097" fromy="31685" fromz="7" tox="33143" toy="31714" toz="7">
+		<monster name="Fire Elemental" amount="5" />
+		<monster name="Demon" amount="35" />
+		<monster name="Fire Devil" amount="5" />
+		<monster name="Infernal Demon" amount="5" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+		<monster name="Unstable Spawn" amount ="5" />		
+	</areaspawn>
+	<areaspawn delay="320000" fromx="33100" fromy="31685" fromz="7" tox="33141" toy="31713" toz="7">
+		<monster name="Fire Elemental" amount="80" />
+		<monster name="Demon" amount="1" />
+		<monster name="Fire Devil" amount="80" />
+		<monster name="Infernal Demon" amount="1" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />		
+		<monster name="Unstable Spawn" amount ="5" />
+	</areaspawn>
+	<areaspawn delay="360000" fromx="33102" fromy="31686" fromz="7" tox="33139" toy="31712" toz="7">
+		<monster name="Fire Elemental" amount="10" />
+		<monster name="Demon" amount="10" />
+		<monster name="Fire Devil" amount="10" />
+		<monster name="Infernal Demon" amount="40" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+		<monster name="Unstable Spawn" amount ="5" />		
+	</areaspawn>
+	<areaspawn delay="380000" fromx="33104" fromy="31686" fromz="7" tox="33137" toy="31711" toz="7">
+		<monster name="Infernal Demon" amount="100" />
+		<monster name="Unstable Spawn" amount ="5" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+	</areaspawn>
+	<areaspawn delay="420000" fromx="33105" fromy="31687" fromz="7" tox="33135" toy="31710" toz="7">
+		<monster name="Infernal Demon" amount="5" />
+		<monster name="Demon" amount="5" />
+		<monster name="Unstable Spawn" amount ="5" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />		
+	</areaspawn>
+	<areaspawn delay="440000" fromx="33106" fromy="31688" fromz="7" tox="33133" toy="31709" toz="7">
+		<monster name="Infernal Demon" amount="5" />
+		<monster name="Demon" amount="8" />
+		<monster name="Unstable Spawn" amount ="4" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+	</areaspawn>
+	<areaspawn delay="480000" fromx="33107" fromy="31689" fromz="7" tox="33131" toy="31708" toz="7">
+		<monster name="Infernal Demon" amount="5" />
+		<monster name="Demon" amount="50" />
+		<monster name="Unstable Spawn" amount ="3" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+	</areaspawn>
+	<areaspawn delay="520000" fromx="33108" fromy="31690" fromz="7" tox="33129" toy="31707" toz="7">
+		<monster name="Infernal Demon" amount="10" />
+		<monster name="Demon" amount="10" />
+		<monster name="Unstable Spawn" amount ="2" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+	</areaspawn>	
+	<areaspawn delay="539000" fromx="33109" fromy="31691" fromz="7" tox="33127" toy="31706" toz="7">
+		<monster name="Infernal Demon" amount="10" />
+		<monster name="Demon" amount="10" />
+		<monster name="Unstable Spawn" amount ="1" />
+		<monster name="Massive Fire Elemental" amount="5" />
+		<monster name="Hellfire Fighter" amount="5" />
+		<monster name="Fury" amount="4" />
+		<monster name="Hellhound" amount="3" />
+		<monster name="True Dawnfire Asura" amount="2" />
+		<monster name="Juggernaut" amount="1" />
+	</areaspawn>			
 </raid>

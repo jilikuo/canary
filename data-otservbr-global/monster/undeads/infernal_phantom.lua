@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Infernal Phantom")
 local monster = {}
 
 monster.description = "a infernal phantom"
-monster.experience = 22880
+monster.experience = 15770
 monster.outfit = {
 	lookType = 1298,
 	lookHead = 114,
@@ -78,30 +78,42 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 70540},
-	{name = "platinum coin", chance = 82220, maxCount = 32},
-	{name = "terra rod", chance = 21920},
-	{name = "ultimate health potion", chance = 32220, maxCount = 7},
-	{name = "hailstorm rod", chance = 71920},
-	{name = "fire axe", chance = 18920},
-	{name = "titan axe", chance = 18920},
-	{name = "chaos mace", chance = 12920},
-	{name = "glorious axe", chance = 22920},
-	{name = "underworld rod", chance = 32920},
-	{name = "springsprout rod", chance = 36920},
-	{name = "wand of starstorm", chance = 36920},
-	{name = "wand of voodoo", chance = 24920},
-	{name = "warrior's axe", chance = 17920},
-	{id = 34139, chance = 11560}, -- infernal heart
-	{id = 34146, chance = 7560}, -- infernal robe
-	{id = 34109, chance = 50} -- bag you desire
+	-- comum
+	{name = "crystal coin", chance = 51240},
+	-- incomum
+	{name = "terra rod", chance = 25320},
+	{name = "ultimate health potion", chance = 18620, maxCount = 2},
+	{name = "hailstorm rod", chance = 6280},
+	-- semi raro
+	{name = "infernal heart", chance = 3920},
+	{name = "springsprout rod", chance = 3890},
+	{name = "underworld rod", chance = 3490},
+	{name = "fire axe", chance = 3270},
+	{name = "wand of starstorm", chance = 3180},
+	{name = "crystal mace", chance = 2110},
+	{name = "wand of voodoo", chance = 1890},
+	{name = "warrior's axe", chance = 1860},
+	{name = "titan axe", chance = 1830},
+	{name = "infernal robe", chance = 1800},
+	{name = "glorious axe", chance = 1696},
+	{name = "chaos mace", chance = 1180},
+	{name = "war axe", chance = 1100},
+	-- muito raro
+	{id = 34109, chance = 10}, -- bag you desire
+
+	--custom
+	{name = "platinum coin", chance = 20000, maxCount = 32},
+	{name = "used candelabrum", chance = 10}
 }
 
 monster.attacks = {
-	{name ="combat", interval = 3000, chance = 24, type = COMBAT_DEATHDAMAGE, minDamage = -550, maxDamage = -1000, range = 7, radius = 3, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -650, maxDamage = -1000, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -450, maxDamage = -1100, radius = 4, effect = CONST_ME_FIREAREA, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -800, maxDamage = -1250, length = 6, effect = CONST_ME_EXPLOSIONHIT, target = false},
+	{name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -800},
+	{name ="combat", interval = 3000, chance = 30, type = COMBAT_DEATHDAMAGE, minDamage = -400, maxDamage = -850, range = 7, radius = 4, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_DEATHDAMAGE, minDamage = -850, maxDamage = -1200, radius = 3, effect = CONST_ME_MORTAREA, target = false},	
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_FIREDAMAGE, minDamage = -950, maxDamage = -1300, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true},
+	{name ="combat", interval = 3000, chance = 18, type = COMBAT_FIREDAMAGE, minDamage = -450, maxDamage = -1100, radius = 4, effect = CONST_ME_FIREAREA, target = false},
+	{name ="combat", interval = 2000, chance = 14, type = COMBAT_FIREDAMAGE, minDamage = -1000, maxDamage = -1250, length = 6, effect = CONST_ME_EXPLOSIONHIT, target = false},
+	{name ="combat", interval = 2000, chance = 13, type = COMBAT_FIREDAMAGE, minDamage = -980, maxDamage = -1150, length = 5, spread = 4, effect = CONST_ME_EXPLOSIONHIT, target = false},	
 }
 
 monster.defenses = {

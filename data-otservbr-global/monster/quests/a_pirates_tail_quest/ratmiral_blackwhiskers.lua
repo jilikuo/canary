@@ -88,22 +88,22 @@ monster.loot = {
 	{id = 35571, chance = 7140}, -- small treasure chest
 	{id = 35578, chance = 6250}, -- tiara
 	{id = 35579, chance = 3570}, -- golden dustbin
-	{id = 32626, chance = 2680}, -- amber
-	{id = 35581, chance = 2680}, -- golden cheese wedge
-	{id = 35595, chance = 2680}, -- soap
+	{id = 32626, chance = 2600}, -- amber
+	{id = 35581, chance = 2550}, -- golden cheese wedge
+	{id = 35595, chance = 2500}, -- soap
 	{id = 35695, chance = 1790}, -- scrubbing brush
-	{id = 35614, chance = 890}, -- cheesy membership card
-	{id = 35523, chance = 890}, -- exotic amulet
-	{id = 35515, chance = 890}, -- throwing axe
-	{id = 35517, chance = 890}, -- bast legs
-	{id = 35516, chance = 890}, -- exotic legs
-	{id = 35518, chance = 890}, -- jungle bow
-	{id = 35524, chance = 890}, -- jungle quiver
-	{id = 35514, chance = 890}, -- jungle flail
-	{id = 35521, chance = 890}, -- jungle rod
-	{id = 35522, chance = 890}, -- jungle wand
-	{id = 35519, chance = 890}, -- makeshift boots
-	{id = 35520, chance = 890} -- make-do boots
+	{id = 35614, chance = 930}, -- cheesy membership card
+	{id = 35523, chance = 900}, -- exotic amulet
+	{id = 35515, chance = 870}, -- throwing axe
+	{id = 35517, chance = 840}, -- bast legs
+	{id = 35516, chance = 810}, -- exotic legs
+	{id = 35518, chance = 780}, -- jungle bow
+	{id = 35524, chance = 750}, -- jungle quiver
+	{id = 35514, chance = 720}, -- jungle flail
+	{id = 35521, chance = 690}, -- jungle rod
+	{id = 35522, chance = 660}, -- jungle wand
+	{id = 35519, chance = 630}, -- makeshift boots
+	{id = 35520, chance = 600} -- make-do boots
 }
 
 monster.attacks = {

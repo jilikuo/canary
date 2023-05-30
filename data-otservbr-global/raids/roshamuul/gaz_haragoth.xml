@@ -2,10 +2,24 @@
 <raid>
 	<!--Announcements-->
 	<announce delay="1000" type="Event" message="Something out of the ordinary, it's better we hide now!" />
-	<announce delay="20000" type="Event" message="His strength is unlimited, the demons kneeling before him .!" />
-	<announce delay="50000" type="Event" message="The dreaded Gaz'Haragoth is invading the land from prison." />
-	<announce delay="80000" type="Event" message="Leave now mortals, beware Gaz'Haragoth." />
+	<announce delay="45000" type="Event" message="A bad omen is coming!" />	
+	<announce delay="225000" type="Event" message="His strength is unlimited, the demons kneeling before him .!" />
+	<announce delay="595888" type="Event" message="The dreaded Gaz'Haragoth is approaching the land from prison." />
+	<announce delay="680000" type="Event" message="Leave now mortals, beware Gaz'Haragoth." />
 
 	<!--Single Spawns-->
-	<singlespawn delay="80000" name="Gaz'Haragoth" x="33538" y="32381" z="12"/>
+	<singlespawn delay="1000" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="55000" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="110000" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="160000" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="220000" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="290333" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="355666" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="400222" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="455444" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="500666" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="535888" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="570000" name="Haragoth Pressage" x="33538" y="32381" z="12"/>
+	<singlespawn delay="680000" name="Gaz'Haragoth" x="33538" y="32381" z="12"/>
+
 </raid>

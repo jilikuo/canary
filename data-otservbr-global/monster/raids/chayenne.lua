@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 200000
-monster.maxHealth = 200000
+monster.health = 2000000
+monster.maxHealth = 2000000
 monster.race = "blood"
 monster.corpse = 6081
 monster.speed = 150
@@ -68,10 +68,10 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 6571, chance = 100000, maxCount = 2}, -- surprise bag
-	{id = 281, chance = 100000}, -- giant shimmering pearl (green)
-	{id = 14681, chance = 100000}, -- anniversary cake
-	{id = 14682, chance = 100000, unique = true} -- chayenne's magical key
+	{id = 6571, chance = 1000, maxCount = 2}, -- surprise bag
+	{id = 281, chance = 1000}, -- giant shimmering pearl (green)
+	{id = 14681, chance = 10000}, -- anniversary cake
+	{id = 14682, chance = 1000, unique = true} -- chayenne's magical key
 }
 
 monster.attacks = {

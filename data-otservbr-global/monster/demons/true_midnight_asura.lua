@@ -75,7 +75,8 @@ monster.voices = {
 monster.loot = {
 	{id = 3031, chance = 97000, maxCount = 242}, -- gold coin
 	{id = 3035, chance = 18200, maxCount = 6}, -- platinum coin
-	{id = 7368, chance = 2000, maxCount = 2}, -- assassin star
+	{id = 3043, chance = 800, maxCount = 2}, -- crystal coin	
+	{id = 7368, chance = 2000, maxCount = 4}, -- assassin star
 	{id = 3027, chance = 2000}, -- black pearl
 	{id = 6558, chance = 2000}, -- flask of demonic blood
 	{id = 6499, chance = 2210}, -- demonic essence

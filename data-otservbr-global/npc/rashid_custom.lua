@@ -4,8 +4,8 @@ local internalNpcName = "Rashid of Island"
 local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
-npcConfig.name = "Rashid"
-npcConfig.description = "Rashid"
+npcConfig.name = "Dihsar"
+npcConfig.description = "Dihsar"
 
 npcConfig.health = 100
 npcConfig.maxHealth = npcConfig.health

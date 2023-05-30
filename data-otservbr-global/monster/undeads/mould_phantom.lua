@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Mould Phantom")
 local monster = {}
 
 monster.description = "a mould phantom"
-monster.experience = 23920
+monster.experience = 18330
 monster.outfit = {
 	lookType = 1298,
 	lookHead = 106,
@@ -79,26 +79,31 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 70540},
-	{name = "gold ingot", chance = 54560},
-	{name = "violet gem", chance = 74560},
-	{name = "green gem", chance = 64560},
-	{name = "blue gem", chance = 54560},
-	{name = "wand of starstorm", chance = 31920},
-	{name = "wand of voodoo", chance = 21920},
-	{name = "ornate crossbow", chance = 41920},
-	{name = "wand of defiance", chance = 21920, maxCount = 3},
-	{id = 23529, chance = 28920}, -- ring of blue plasma
-	{id = 23542, chance = 28920}, -- collar of blue plasma
-	{id = 34141, chance = 12920}, -- mould heart
-	{name = "crystal crossbow", chance = 1920},
-	{id = 34109, chance = 50} -- bag you desire
+	{name = "crystal coin", chance = 51111},
+	{name = "gold ingot", chance = 10370},
+	{name = "violet gem", chance = 4810},
+	{name = "green gem", chance = 3333},
+	{name = "blue gem", chance = 2590},
+	{name = "wand of starstorm", chance = 3700},
+	{name = "wand of voodoo", chance = 3332},
+	{name = "ornate crossbow", chance = 740},
+	{name = "wand of defiance", chance = 2222},
+	{id = 23529, chance = 1080}, -- ring of blue plasma
+	{id = 23542, chance = 1480}, -- collar of blue plasma
+	{id = 34141, chance = 3331}, -- mould heart
+	{id = 34148, chance = 1850}, -- mould robe	acho q
+	{name = "crystal crossbow", chance = 870},
+	{id = 34109, chance = 10} -- bag you desire
 }
 
 monster.attacks = {
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -650, maxDamage = -1000, radius = 4, effect = CONST_ME_GREEN_RINGS, target = false},
-	{name ="combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -650, maxDamage = -1000, range = 7, radius = 4, shootEffect = CONST_ANI_POISON, effect = CONST_ME_SMALLPLANTS, target = true},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_HOLYDAMAGE, minDamage = -800, maxDamage = -1100, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -900},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1150, maxDamage = -1400, radius = 4, effect = CONST_ME_GREEN_RINGS, target = false},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -1100, maxDamage = -1300, radius = 3, effect = CONST_ME_HOLYDAMAGE, target = true},	
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1050, maxDamage = -1250, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_SMALLPLANTS, target = true},
+	{name ="combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -550, maxDamage = -1050, length = 6, spread = 2, effect = CONST_ME_SMALLPLANTS, target = false},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_HOLYDAMAGE, minDamage = -666, maxDamage = -888, length = 5, spread = 4, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = false},
+	{name ="combat", interval = 2000, chance = 25, type = COMBAT_HOLYDAMAGE, minDamage = -1000, maxDamage = -1350, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true}
 	-- Chain: const_me-> CONST_ME_GREEN_ENERGY_SPARK, combat_t->COMBAT_EARTHDAMAGE
 }
 

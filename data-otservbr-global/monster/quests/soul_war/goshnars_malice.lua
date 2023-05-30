@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Goshnar's Malice")
 local monster = {}
 
 monster.description = "Goshnar's Malice"
-monster.experience = 200000
+monster.experience = 1000000
 monster.outfit = {
 	lookType = 1306,
 	lookHead = 0,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 300000
-monster.maxHealth = 300000
+monster.health = 600000
+monster.maxHealth = 600000
 monster.race = "undead"
 monster.corpse = 33871
 monster.speed = 150
@@ -64,10 +64,10 @@ monster.light = {
 }
 
 monster.summon = {
-	maxSummons = 4,
+	maxSummons = 8,
 	summons = {
-		{name = "dreadful harvester", chance = 40, interval = 1000, count = 2},
-		{name = "malicious soul", chance = 30, interval = 1000, count = 2}
+		{name = "dreadful harvester", chance = 40, interval = 1000, count = 4},
+		{name = "malicious soul", chance = 30, interval = 1000, count = 4}
 	}
 }
 
@@ -78,30 +78,44 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 55000, minCount = 70, maxCount = 75},
-	{id = 281, chance = 1150}, -- giant shimmering pearl (green)
-	{name = "giant sapphire", chance = 10000, maxCount = 1},
-	{name = "giant topaz", chance = 10000, maxCount = 1},
-	{name = "violet gem", chance = 6000, maxCount = 1},
-	{name = "blue gem", chance = 10000, maxCount = 3},
-	{id= 3039, chance = 10000, maxCount = 3}, -- red gem
-	{name = "green gem", chance = 10000, maxCount = 3},
-	{name = "yellow gem", chance = 10000, maxCount = 3},
-	{name = "white gem", chance = 6000, maxCount = 3},
-	{name = "dragon figurine", chance = 10000, maxCount = 1},
-	{name = "bullseye potion", chance = 15000, minCount = 10, maxCount = 25},
-	{name = "mastermind potion", chance = 15000, minCount = 10, maxCount = 25},
-	{name = "berserk potion", chance = 15000, minCount = 10, maxCount = 25},
-	{name = "ultimate mana potion", chance = 18000, minCount = 50, maxCount = 100},
-	{name = "supreme health potion", chance = 18000, minCount = 50, maxCount = 100},
-	{name = "ultimate spirit potion", chance = 18000, minCount = 50, maxCount = 100},
-	{name = "malice's spine", chance = 2000, maxCount = 1},
-	{name = "malice's horn", chance = 2000, maxCount = 1},
-	{name = "bracelet of strengthening", chance = 400},
-	{name = "spectral horseshoe", chance = 400},
-	{name = "the skull of a beast", chance = 400},
+	-- comum
+	{name = "platinum coin", chance = 100000, minCount = 1, maxCount = 200},
+	{name = "crystal coin", chance = 100000, minCount = 20, maxCount = 350},
+
+	{name = "ultimate spirit potion", chance = 24000, minCount = 1, maxCount = 500},		
+	{name = "supreme health potion", chance = 23000, minCount = 1, maxCount = 500},
+	{name = "ultimate mana potion", chance = 22000, minCount = 1, maxCount = 500},
+
+	{name = "berserk potion", chance = 20000, minCount = 1, maxCount = 100},	
+	{name = "bullseye potion", chance = 19000, minCount = 1, maxCount = 100},	
+	{name = "mastermind potion", chance = 18000, minCount = 1, maxCount = 100},			
+
+	{name = "Giant Amethyst", chance = 16000, maxCount = 5},
+	{name = "giant sapphire", chance = 15000, maxCount = 5},
+	{name = "giant topaz", chance = 14000, maxCount = 5},	
+	{id = 281, chance = 13000, maxCount = 2}, -- giant shimmering pearl (green)
+	{name = "dragon figurine", chance = 12500, maxCount = 3},	
+
+	{name = "green gem", chance = 12000, maxCount = 2},	
+	{name = "yellow gem", chance = 11500, maxCount = 2},		
+	{name = "blue gem", chance = 11000, maxCount = 2},
+	{name = "violet gem", chance = 10000, maxCount = 2},	
+	{name = "white gem", chance = 9000, maxCount = 2},
+	{id= 3039, chance = 8000, maxCount = 3}, -- red gem		
+
+	{name = "malice's horn", chance = 4000},		
+
+	-- semi-raro
+	{name = "malice's spine", chance = 2000},
+
+	-- raro
 	{name = "figurine of malice", chance = 400},
-	{name = "bag you desire", chance = 100},
+	{name = "bracelet of strengthening", chance = 400},
+	{name = "spectral horseshoe", chance = 400},	
+	{name = "the skull of a beast", chance = 400},
+
+	-- muito raro
+	{name = "bag you desire", chance = 400}
 }
 
 monster.attacks = {
@@ -118,16 +132,16 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{type = COMBAT_PHYSICALDAMAGE, percent = 0},
-	{type = COMBAT_ENERGYDAMAGE, percent = 15},
-	{type = COMBAT_EARTHDAMAGE, percent = 15},
-	{type = COMBAT_FIREDAMAGE, percent = 15},
+	{type = COMBAT_PHYSICALDAMAGE, percent = 30},
+	{type = COMBAT_ENERGYDAMAGE, percent = 20},
+	{type = COMBAT_EARTHDAMAGE, percent = 0},
+	{type = COMBAT_FIREDAMAGE, percent = -10},
 	{type = COMBAT_LIFEDRAIN, percent = 100},
 	{type = COMBAT_MANADRAIN, percent = 0},
 	{type = COMBAT_DROWNDAMAGE, percent = 100},
-	{type = COMBAT_ICEDAMAGE, percent = 0},
-	{type = COMBAT_HOLYDAMAGE , percent = 0},
-	{type = COMBAT_DEATHDAMAGE , percent = 0}
+	{type = COMBAT_ICEDAMAGE, percent = 20},
+	{type = COMBAT_HOLYDAMAGE , percent = 10},
+	{type = COMBAT_DEATHDAMAGE , percent = 20}
 }
 
 monster.immunities = {
