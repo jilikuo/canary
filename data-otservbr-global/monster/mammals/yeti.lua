@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Yeti")
 local monster = {}
 
 monster.description = "a yeti"
-monster.experience = 460
+monster.experience = 54000
 monster.outfit = {
 	lookType = 110,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Folda, Chyllfroest, Isle of Merriment."
 	}
 
-monster.health = 950
-monster.maxHealth = 950
+monster.health = 95000
+monster.maxHealth = 95000
 monster.race = "blood"
 monster.corpse = 6038
 monster.speed = 125
@@ -76,18 +76,19 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "snowball", chance = 10000, maxCount = 22},
-	{name = "gold coin", chance = 100000, maxCount = 60},
-	{name = "gold coin", chance = 100000, maxCount = 40},
-	{name = "bunnyslippers", chance = 1333},
+	{name = "snowball", chance = 10000, maxCount = 100},
+	{name = "platinum coin", chance = 100000, maxCount = 60},
+	{name = "crystal coin", chance = 100000, maxCount = 40},
+	{name = "bunnyslippers", chance = 33},
 	{name = "meat", chance = 33333, maxCount = 4},
 	{name = "ham", chance = 10000, maxCount = 5}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -200},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -180, range = 7, shootEffect = CONST_ANI_SNOWBALL, effect = CONST_ME_POFF, target = false},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_ENERGYDAMAGE, minDamage = 0, maxDamage = -175, length = 3, spread = 3, effect = CONST_ME_POFF, target = false}
+	{name ="melee", interval = 1000, chance = 100, minDamage = -2000, maxDamage = -6000},
+	{name ="combat", interval = 1000, chance = 25, type = COMBAT_ICEDAMAGE, minDamage = -2000, maxDamage = -2800, range = 7, shootEffect = CONST_ANI_SNOWBALL, effect = CONST_ME_POFF, target = false},
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -1000, maxDamage = -5075, length = 3, spread = 3, effect = CONST_ME_STONES, target = false},
+	{name ="combat", interval = 2000, chance = 5, type = COMBAT_ENERGYDAMAGE, minDamage = -7000, maxDamage = -7500, radius = 3, effect = CONST_ME_GIANTICE, target = false}	
 }
 
 monster.defenses = {

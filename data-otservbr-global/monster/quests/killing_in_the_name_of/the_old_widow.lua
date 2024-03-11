@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("The Old Widow")
 local monster = {}
 
 monster.description = "The Old Widow"
-monster.experience = 4200
+monster.experience = 42000
 monster.outfit = {
 	lookType = 208,
 	lookHead = 0,
@@ -13,15 +13,15 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 3200
-monster.maxHealth = 3200
+monster.health = 32000
+monster.maxHealth = 32000
 monster.race = "blood"
 monster.corpse = 5977
 monster.speed = 219
 monster.manaCost = 0
 
 monster.changeTarget = {
-	interval = 5000,
+	interval = 500,
 	chance = 8
 }
 
@@ -46,9 +46,9 @@ monster.flags = {
 	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
-	canWalkOnEnergy = false,
-	canWalkOnFire = false,
-	canWalkOnPoison = false
+	canWalkOnEnergy = true,
+	canWalkOnFire = true,
+	canWalkOnPoison = true
 }
 
 monster.light = {
@@ -57,9 +57,9 @@ monster.light = {
 }
 
 monster.summon = {
-	maxSummons = 2,
+	maxSummons = 12,
 	summons = {
-		{name = "giant spider", chance = 13, interval = 1000, count = 2}
+		{name = "giant spider", chance = 13, interval = 1000, count = 6}
 	}
 }
 
@@ -69,8 +69,9 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 3031, chance = 100000, maxCount = 99}, -- gold coin
-	{id = 3035, chance = 100000, maxCount = 10}, -- platinum coin
+	{id = 3031, chance = 100000, maxCount = 990}, -- gold coin
+	{id = 3035, chance = 100000, maxCount = 100}, -- platinum coin
+	{id = 3043, chance = 10000, maxCount = 5}, -- crystal coin	
 	{id = 5879, chance = 100000}, -- spider silk
 	{id = 3351, chance = 100000}, -- steel helmet
 	{id = 239, chance = 100000, maxCount = 4}, -- great health potion
@@ -87,16 +88,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -500},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -250, maxDamage = -300, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = false},
-	{name ="speed", interval = 1000, chance = 20, speedChange = -850, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = false, duration = 25000},
-	{name ="poisonfield", interval = 1000, chance = 10, range = 7, radius = 4, shootEffect = CONST_ANI_POISON, target = true}
+	{name ="melee", interval = 600, chance = 100, minDamage = -100, maxDamage = -2500},
+	{name ="combat", interval = 600, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -250, maxDamage = -1300, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = false},
+	{name ="speed", interval = 600, chance = 20, speedChange = -1850, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = false, duration = 25000},
+	{name ="poisonfield", interval = 100, chance = 10, range = 7, radius = 9, shootEffect = CONST_ANI_POISON, target = true}
 }
 
 monster.defenses = {
 	defense = 21,
 	armor = 17,
-	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 225, maxDamage = 275, effect = CONST_ME_MAGIC_BLUE, target = false},
+	{name ="combat", interval = 1000, chance = 17, type = COMBAT_HEALING, minDamage = 25, maxDamage = 1275, effect = CONST_ME_MAGIC_BLUE, target = false},
 	{name ="speed", interval = 1000, chance = 8, speedChange = 345, effect = CONST_ME_MAGIC_RED, target = false, duration = 6000}
 }
 

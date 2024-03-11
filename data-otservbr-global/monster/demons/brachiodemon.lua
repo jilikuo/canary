@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Brachiodemon")
 local monster = {}
 
 monster.description = "a brachiodemon"
-monster.experience = 22880
+monster.experience = 15770
 monster.outfit = {
 	lookType = 1299,
 	lookHead = 0,
@@ -79,35 +79,40 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "crystal coin", chance = 70540},
-	{name = "platinum coin", chance = 90540, maxCount = 32},
-	{name = "ultimate health potion", chance = 32220, maxCount = 7},
-	{id = 33936, chance = 35560}, -- hand
-	{name = "skull staff", chance = 65560},
-	{name = "epee", chance = 75560},
-	{name = "crystal mace", chance = 25560},
-	{name = "noble axe", chance = 8560},
-	{name = "spellbook of mind control", chance = 9000},
-	{id = 33937, chance = 7500}, -- head
-	{name = "fire axe", chance = 13500},
-	{name = "royal helmet", chance = 15500},
-	{name = "mastermind shield", chance = 9500},
-	{name = "assassin dagger", chance = 8500},
-	{name = "butcher's axe", chance = 7500},
-	{name = "jade hammer", chance = 6500},
-	{name = "crystalline sword", chance = 5500},
-	{name = "alloy legs", chance = 4500},
-	{name = "metal bat", chance = 3500},
-	{id = 23531, chance = 8920}, -- ring of green plasma
-	{id = 34025, chance = 1550}, -- diabolic skull
-	{id = 34109, chance = 50} -- bag you desire
+	{name = "crystal coin", chance = 51880},
+	{name = "ultimate health potion", chance = 24470, maxCount = 4},
+	{id = 33936, chance = 5666}, -- hand
+	{id = 33937, chance = 2800}, -- head (brachiodemon)
+	{name = "epee", chance = 2700},
+	{name = "crystal mace", chance = 1550},
+	{name = "skull staff", chance = 1460},
+	{name = "noble axe", chance = 980},
+	{name = "spellbook of mind control", chance = 740},
+	{name = "assassin dagger", chance = 570},
+	{name = "jade hammer", chance = 485},
+	{id = 23531, chance = 480}, -- ring of green plasma
+	{name = "fire axe", chance = 435},
+	{name = "alloy legs", chance = 430},
+	{name = "butcher's axe", chance = 420},
+	{name = "metal bat", chance = 410},
+	{name = "royal helmet", chance = 330},
+	{name = "mastermind shield", chance = 310},
+	{id = 34025, chance = 260}, -- diabolic skull
+	{name = "crystalline sword", chance = 220},
+	{id = 34109, chance = 10}, -- bag you desire
+
+	-- custom
+	{name = "platinum coin", chance = 20000, maxCount = 32},
+	{name = "Used Candelabrum", chance = 10}
+	
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -950},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -450, maxDamage = -700, range = 7, radius = 4, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
-	{name ="combat", interval = 2000, chance = 18, type = COMBAT_FIREDAMAGE, minDamage = -450, maxDamage = -900, radius = 3, effect = CONST_ME_FIREAREA, target = false},
-	{name ="combat", interval = 2000, chance = 22, type = COMBAT_DEATHDAMAGE, minDamage = -450, maxDamage = -900, radius = 4, effect = CONST_ME_EXPLOSIONHIT, target = false},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1000},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -450, maxDamage = -700, range = 7, radius = 3, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="combat", interval = 2000, chance = 5, type = COMBAT_DEATHDAMAGE, minDamage = -1150, maxDamage = -1460, range = 7, radius = 1, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="combat", interval = 2000, chance = 18, type = COMBAT_FIREDAMAGE, minDamage = -1100, maxDamage = -1500, radius = 3, effect = CONST_ME_FIREAREA, target = false},
+	{name ="combat", interval = 2000, chance = 22, type = COMBAT_DEATHDAMAGE, minDamage = -900, maxDamage = -1300, radius = 4, effect = CONST_ME_EXPLOSIONHIT, target = false},
 	{name ="combat", interval = 2000, chance = 24, type = COMBAT_FIREDAMAGE, minDamage = -450, maxDamage = -1000, radius = 4, effect = CONST_ME_EXPLOSIONAREA, target = false},
 	{name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -700, maxDamage = -1150, length = 8, effect = CONST_ME_EXPLOSIONHIT, target = false},
 }

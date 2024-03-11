@@ -6443,6 +6443,16 @@ if not Quests then
 					states = {
 						[1] = "Your task is to find someone to bring you to Vengoth. Explore the island and use Julius' map whenever you find an unusual spot to mark it. Mark at least 5 spots including the castle and report back."
 					}
+				},
+				[5] = {
+					name = "Acesso a Vengoth",
+					storageId = Storage.Quest.U8_4.BloodBrothers.VengothAccess,
+					missionId = 10451,
+					startValue = 1,
+					endValue = 1,
+					states = {
+						[1] = "Você conseguiu acesso a Vengoth."
+					}
 				}
 			}
 		},

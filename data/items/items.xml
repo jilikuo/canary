@@ -2529,8 +2529,8 @@
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="shootType" value="smallstone"/>
 		<attribute key="maxhitchance" value="76"/>
-		<attribute key="range" value="4"/>
-		<attribute key="attack" value="5"/>
+		<attribute key="range" value="1"/>
+		<attribute key="attack" value="1"/>
 		<attribute key="weight" value="360"/>
 	</item>
 	<item id="1782" article="a" name="stone">
@@ -34726,6 +34726,7 @@
 		<attribute key="weight" value="150"/>
 	</item>
 	<item id="22795" article="a" name="metal grate"/>
+	<item id="23463" article="a" name="metal grates"/>
 	<item id="22796" article="an" name="arena banner"/>
 	<item id="22797" article="a" name="depot box I">
 		<attribute key="containersize" value="32"/>
@@ -51048,6 +51049,7 @@
 	<item fromid="35943" toid="35944" name="grandiose lamp">
 		<attribute key="wrapableto" value="23398"/>
 	</item>
+	<!-- missing beds -->
 	<item id="35949" article="a" name="portable aqueduct">
 		<attribute key="description" value="This little fellow just keeps on swimming"/>
 		<attribute key="duration" value="200"/>

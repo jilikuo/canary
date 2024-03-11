@@ -402,6 +402,7 @@ npcConfig.shop = {
 	{ itemName = "necromantic robe", clientId = 11475, sell = 250 },
 	{ itemName = "nettle blossom", clientId = 10314, sell = 75 },
 	{ itemName = "nettle spit", clientId = 11476, sell = 25 },
+	{ itemName = "nighthunter wing", clientId = 39381, sell = 2000},
 	{ itemName = "noble amulet", clientId = 31595, sell = 430000 },
 	{ itemName = "noble cape", clientId = 31593, sell = 425000 },
 	{ itemName = "noble turban", clientId = 11486, sell = 430 },

@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Gaz'Haragoth")
 local monster = {}
 
 monster.description = "Gaz'Haragoth"
-monster.experience = 1000000
+monster.experience = 10000000
 monster.outfit = {
 	lookType = 591,
 	lookHead = 0,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 350000
-monster.maxHealth = 350000
+monster.health = 500000
+monster.maxHealth = 500000
 monster.race = "undead"
 monster.corpse = 20228
 monster.speed = 250
@@ -79,26 +79,26 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 3043, chance = 10000, maxCount = 6}, -- crystal coin
-	{id = 16124, chance = 10000, maxCount = 15}, -- blue crystal splinter
+	{id = 3043, chance = 10000, maxCount = 60}, -- crystal coin
+	{id = 16124, chance = 10000, maxCount = 100}, -- blue crystal splinter
 	{id = 7368, chance = 10000, maxCount = 100}, -- assassin star
-	{id = 20264, chance = 7000, maxCount = 3}, -- unrealized dream
-	{id = 6499, chance = 1000, maxCount = 2}, -- demonic essence
+	{id = 20264, chance = 7000, maxCount = 30}, -- unrealized dream
+	{id = 6499, chance = 1000, maxCount = 100}, -- demonic essence
 	{id = 7643, chance = 10000, maxCount = 100}, -- ultimate health potion
 	{id = 238, chance = 10000, maxCount = 100}, -- great mana potion
 	{id = 7642, chance = 10000, maxCount = 100}, -- great spirit potion
-	{id = 20063, chance = 2000, maxCount = 3}, -- dream matter
-	{id = 20062, chance = 2000, maxCount = 14}, -- cluster of solace
-	{id = 3041, chance = 10000, maxCount = 2}, -- blue gem
-	{id = 16122, chance = 10000, maxCount = 10}, -- green crystal splinter
-	{id = 16120, chance = 10000, maxCount = 15}, -- violet crystal shard
-	{id = 6528, chance = 6000}, -- infernal bolt
+	{id = 20063, chance = 2000, maxCount = 30}, -- dream matter
+	{id = 20062, chance = 2000, maxCount = 100}, -- cluster of solace
+	{id = 3041, chance = 10000, maxCount = 20}, -- blue gem
+	{id = 16122, chance = 10000, maxCount = 100}, -- green crystal splinter
+	{id = 16120, chance = 10000, maxCount = 100}, -- violet crystal shard
+	{id = 6528, chance = 6000, maxCount = 100}, -- infernal bolt
 	{id = 20278, chance = 6000}, -- demonic tapestry
-	{id = 5914, chance = 6000}, -- yellow piece of cloth
-	{id = 5911, chance = 6000}, -- red piece of cloth
+	{id = 5914, chance = 6000, maxCount = 3}, -- yellow piece of cloth
+	{id = 5911, chance = 6000, maxCount = 3}, -- red piece of cloth
 	{id = 20276, chance = 1100}, -- dream warden mask
-	{id = 281, chance = 6000}, -- giant shimmering pearl (green)
-	{id = 5954, chance = 6000}, -- demon horn
+	{id = 281, chance = 6000, maxCount = 30}, -- giant shimmering pearl (green)
+	{id = 5954, chance = 6000, maxCount = 30}, -- demon horn
 	{id = 20274, chance = 6000, unique = true}, -- nightmare horn
 	{id = 3052, chance = 6000}, -- life ring
 	{id = 20280, chance = 6000}, -- nightmare beacon
@@ -135,29 +135,30 @@ monster.loot = {
 	{id = 10344, chance = 6000}, -- twin sun charm
 	{id = 10343, chance = 6000}, -- spiritual charm
 	{id = 10342, chance = 6000}, -- unity charm
-	{id = 10341, chance = 6000} -- phoenix charm
+	{id = 10341, chance = 6000}, -- phoenix charm
+	{name = "exalted core", chance = 1000}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -5000},
-	{name ="combat", interval = 3000, chance = 35, type = COMBAT_ICEDAMAGE, minDamage = -900, maxDamage = -1100, range = 7, radius = 7, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEAREA, target = true},
-	{name ="combat", interval = 2000, chance = 13, type = COMBAT_DEATHDAMAGE, minDamage = -100, maxDamage = -1000, length = 8, spread = 3, effect = CONST_ME_POFF, target = false},
-	{name ="combat", interval = 2000, chance = 19, type = COMBAT_DEATHDAMAGE, minDamage = -100, maxDamage = -800, range = 7, radius = 6, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
-	{name ="melee", interval = 1800, chance = 40, minDamage = 0, maxDamage = -1000},
-	{name ="combat", interval = 3000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -4000, maxDamage = -6000, length = 8, spread = 3, effect = CONST_ME_HITBYFIRE, target = false},
-	{name ="combat", interval = 2000, chance = 14, type = COMBAT_FIREDAMAGE, minDamage = -1600, maxDamage = -3400, length = 8, spread = 3, effect = CONST_ME_FIREAREA, target = false},
-	{name ="combat", interval = 2500, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -480, range = 7, radius = 5, effect = CONST_ME_MAGIC_GREEN, target = false},
-	{name ="gaz'haragoth iceball", interval = 2000, chance = 24, minDamage = -1000, maxDamage = -1000, target = false},
-	{name ="gaz'haragoth death", interval = 4000, chance = 6, target = false},
-	{name ="gaz'haragoth paralyze", interval = 2000, chance = 12, target = false},
-	{name ="gaz'haragoth summon", interval = 1000, chance = 100, target = false}
+	{name ="melee", interval = 1250, chance = 100, minDamage = 0, maxDamage = -8000},
+	{name ="combat", interval = 1750, chance = 35, type = COMBAT_ICEDAMAGE, minDamage = -900, maxDamage = -4000, range = 7, radius = 7, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEAREA, target = true},
+	{name ="combat", interval = 1250, chance = 21, type = COMBAT_DEATHDAMAGE, minDamage = -100, maxDamage = -4100, length = 8, spread = 3, effect = CONST_ME_POFF, target = false},
+	{name ="combat", interval = 1250, chance = 17, type = COMBAT_DEATHDAMAGE, minDamage = -100, maxDamage = -5000, range = 7, radius = 6, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="melee", interval = 1250, chance = 57, minDamage = 0, maxDamage = -4000},
+	{name ="combat", interval = 1750, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -4000, maxDamage = -10000, length = 8, spread = 3, effect = CONST_ME_HITBYFIRE, target = false},
+	{name ="combat", interval = 1250, chance = 19, type = COMBAT_FIREDAMAGE, minDamage = -1600, maxDamage = -5300, length = 8, spread = 3, effect = CONST_ME_FIREAREA, target = false},
+	{name ="combat", interval = 1500, chance = 29, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -2580, range = 7, radius = 5, effect = CONST_ME_MAGIC_GREEN, target = false},
+	{name ="gaz'haragoth iceball", interval = 1250, chance = 27, minDamage = -5000, maxDamage = -5000, target = false},
+	{name ="gaz'haragoth death", interval = 2500, chance = 7, target = false},
+	{name ="gaz'haragoth paralyze", interval = 1250, chance = 11, target = false},
+	{name ="gaz'haragoth summon", interval = 1100, chance = 98, target = false}
 }
 
 monster.defenses = {
-	defense = 65,
-	armor = 55,
-	{name ="combat", interval = 3000, chance = 35, type = COMBAT_HEALING, minDamage = 2500, maxDamage = 3500, effect = CONST_ME_MAGIC_BLUE, target = false},
-	{name ="speed", interval = 4000, chance = 80, speedChange = 700, effect = CONST_ME_MAGIC_RED, target = false, duration = 6000}
+	defense = 165,
+	armor = 155,
+	{name ="combat", interval = 3000, chance = 35, type = COMBAT_HEALING, minDamage = 1500, maxDamage = 3333, effect = CONST_ME_MAGIC_BLUE, target = false},
+	{name ="speed", interval = 4000, chance = 80, speedChange = 1400, effect = CONST_ME_MAGIC_RED, target = false, duration = 6000}
 }
 
 monster.elements = {

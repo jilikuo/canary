@@ -21,8 +21,8 @@ monster.speed = 125
 monster.manaCost = 0
 
 monster.changeTarget = {
-	interval = 4000,
-	chance = 10
+	interval = 1000,
+	chance = 25
 }
 
 monster.bosstiary = {
@@ -98,12 +98,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -5}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -2500},
+	{name ="combat", interval = 4000, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -1900, maxDamage = -6000, radius = 7, effect = CONST_ME_GROUNDSHAKER, target = false},
+	{name ="combat", interval = 8000, chance = 75, type = COMBAT_EARTHDAMAGE, minDamage = -3300, maxDamage = -3300, range = 7, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_BIGPLANTS, target = true},
+	{name ="combat", interval = 18000, chance = 100, type = COMBAT_DEATHDAMAGE, minDamage = -2500, maxDamage = -2500, range = 7, radius = 5, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = true},	
+	{name ="condition", type = CONDITION_BLEEDING, interval = 10000, chance = 50, minDamage = -5000, maxDamage = -15000, range = 3, effect = CONST_ME_SLASH, target = true}
+	
 }
 
 monster.defenses = {
-	defense = 20,
-	armor = 20
+	defense = 1000,
+	armor = 500
 }
 
 monster.elements = {

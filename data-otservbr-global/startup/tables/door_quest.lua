@@ -223,10 +223,10 @@ QuestDoorAction = {
 		itemId = false,
 		itemPos = {{x = 33220, y = 32149, z = 9}}
 	},
-	[Storage.CultsOfTibia.Barkless.TrialAccessDoor] = {
-		itemId = false,
-		itemPos = {{x = 32688, y = 31543, z = 9}}
-	},
+--	[Storage.CultsOfTibia.Barkless.TrialAccessDoor] = {
+--		itemId = false,  
+--		itemPos = {{x = 32688, y = 31543, z = 9}} -- MODIFICADO PARA BARKLESS ACCESS DOOR ATÉ CORRIGIR O PROBLEMA COM DUPLICIDADE COM CARRINHO
+--	},
 	[Storage.CultsOfTibia.Barkless.TarAccessDoor] = {
 		itemId = false,
 		itemPos = {
@@ -238,7 +238,8 @@ QuestDoorAction = {
 		itemId = false,
 		itemPos = {
 			{x = 32742, y = 31408, z = 8},
-			{x = 32686, y = 31430, z = 8}
+			{x = 32686, y = 31430, z = 8},
+			{x = 32688, y = 31543, z = 9}
 		}
 	},
 	[Storage.CultsOfTibia.Barkless.BossAccessDoor] = {

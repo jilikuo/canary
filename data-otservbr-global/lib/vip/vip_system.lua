@@ -12,7 +12,7 @@ local config = {
 	expirationMessageType = MESSAGE_STATUS_WARNING,
 
 	-- remover todos os addons e mounts vips, após o termino da vip
-	removeAddonsAndMounts = true
+	removeAddonsAndMounts = false
 }
 
 if not VipData then
@@ -32,12 +32,12 @@ function Player.onRemoveVip(self)
 	end
 
 	if config.removeAddonsAndMounts then
-		local outfitsToDelete = { 963, 965, 967, 969, 971, 973, 975, 962, 964, 966, 968, 970, 972, 974 } -- retro outfits ids
+		local outfitsToDelete = {  } -- retro outfits ids 963, 965, 967, 969, 971, 973, 975, 962, 964, 966, 968, 970, 972, 974
 		for i = 1, #outfitsToDelete do
 			self:removeOutfit(outfitsToDelete[i])
 		end
 
-		local mountsToDelete = { 168, 169, 170 } -- mounts id
+		local mountsToDelete = { } -- mounts id  168, 169, 170
 		for i = 1, #mountsToDelete do
 			self:removeMount(mountsToDelete[i])
 		end
@@ -58,8 +58,8 @@ end
 
 function Player.addAddonMount(self)
 
-	local outfitsToUpgrade = { 963, 965, 967, 969, 971, 973, 975, 962, 964, 966, 968, 970, 972, 974 } -- add outfits ids
-	local mountsToUpgrade = { 168, 169, 170 } -- add mounts ids
+	local outfitsToUpgrade = {  } -- add outfits ids 963, 965, 967, 969, 971, 973, 975, 962, 964, 966, 968, 970, 972, 974
+	local mountsToUpgrade = {  } -- add mounts ids 168, 169, 170
 
 	if self:getVipDays() > 0 then
 		for i = 1, #outfitsToUpgrade do
@@ -94,7 +94,7 @@ function Player.addInfiniteVip(self)
 	data.days = 0xFFFF
 	data.lastDay = 0
 
-	db.query(string.format('UPDATE `accounts` SET `vipdays` = %i, `viplastday` = %i WHERE `id` = %i;', 0xFFFF, 0, self:getAccountId()))
+--	db.query(string.format('UPDATE `accounts` SET `vipdays` = %i, `viplastday` = %i WHERE `id` = %i;', 0xFFFF, 0, self:getAccountId()))
 end
 
 function Player.addVipDays(self, days)
